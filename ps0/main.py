@@ -9,7 +9,7 @@ Created on Wed Feb 28 21:29:39 2024
 import sys
 import numpy
 
-def get_user_input_x(retries):
+def get_user_input_x(retries: int) -> float:
     while retries > 0:
         x = input('Enter number x: ')
         try: 
@@ -21,7 +21,7 @@ def get_user_input_x(retries):
     print(f'exiting after {str(retries)} retries')
     sys.exit()
     
-def get_user_input_y(retries):
+def get_user_input_y(retries: int) -> float:
     while retries > 0:
         y = input('Enter number y: ')
         try: 
